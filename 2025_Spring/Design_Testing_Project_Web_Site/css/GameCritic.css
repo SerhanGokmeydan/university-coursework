@@ -1,0 +1,208 @@
+@import url("./main.css");
+
+#critic {
+    width: 50%;
+    align-self: center;
+    padding: 50px 50px;
+    background: linear-gradient(
+        to right,
+        black,
+        #212529 15%,
+        #212529 85%,
+        black
+    );
+}
+
+#critic h1 {
+    margin-bottom: 50px;
+}
+
+#critic p {
+    font-size: 24px;
+    color: whitesmoke;
+    line-height: 32px;
+    text-indent: 24px;
+    margin-bottom: 18px;
+    font-family: sans-serif;
+}
+
+.ghost {
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+    position: fixed;
+    top: calc(200px * var(--i));
+    animation: ghost-animation calc(13s / var(--i)) linear infinite;
+}
+.ghost:nth-child(2n) {
+    animation-direction: reverse;
+}
+
+.donkey-kong {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+}
+
+.donkey-kong-div {
+    z-index: -1 ;
+    position: fixed;
+    top: 300px;
+    right: 250px;
+    animation: donkey-kong-animation 5s linear infinite alternate;
+}
+
+#main-container > .donkey-kong-div::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -1000px;
+    left: 42px;
+    width: 6px;
+    height: 1200px;
+    background-color: #fcd8a9;
+}
+
+#main-container > .donkey-kong-div::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -1000px;
+    left: 48px;
+    width: 6px;
+    height: 1200px;
+    background-color: #c84c0c;
+}
+
+#footer .donkey-kong {
+    bottom: 152px;
+    width: 300px;
+    height: 200px;
+}
+
+
+.block {
+    position: fixed;
+    width: 100px;
+    animation: tetris-animation 1s linear infinite;
+    animation-duration: calc(87s / var(--i));
+    z-index: -1;
+}
+
+.block:nth-child(n) {
+    left: 50px;
+}
+
+.block:nth-child(2n) {
+    left: 200px;
+}
+
+.block:nth-child(3n) {
+    left: 350px;
+}
+.block:nth-child(4n) {
+    left: 1550px;
+    transform: rotate(90deg);
+}
+.block:nth-child(5n) {
+    left: 1400px;
+}
+.block:nth-child(6n) {
+    left: 1700px;
+}
+
+.mario {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    z-index: -1;
+}
+
+.ground {
+    left: calc(50px * var(--i));
+    bottom: 200px;
+}
+
+.luck {
+    bottom: 350px;
+    left: calc(150px * var(--i));
+}
+
+.luigi {
+    width: 70px;
+    height: 70px;
+    bottom: 250px;
+    animation: running-mario-animation 30s linear infinite;
+}
+
+.mushroom {
+    width: 70px;
+    height: 70px;
+    bottom: 385px;
+    left: 290px;
+}
+
+.flower {
+    bottom: 250px;
+    right: 200px;
+z-index: -2;
+}
+
+.arcade-star {
+    bottom: calc(600px + 50px * var(--i));
+    left: calc(150px * var(--j));
+}
+
+.coin{
+    bottom:410px ;
+    right: 182px;
+width: 40px;
+height: 40px;
+}
+
+@keyframes ghost-animation {
+    from {
+        translate: -50px;
+    }
+    to {
+        translate: 100vw;
+    }
+}
+
+@keyframes donkey-kong-animation {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(500px);
+    }
+}
+
+@keyframes running-mario-animation {
+    0% {
+        translate: 50px;
+    }
+    49.9% {
+        transform: scaleX(1);
+    }
+    50% {
+        translate: calc(100vw - 150px);
+        transform: scaleX(-1);
+    }
+    99.9% {
+        transform: scaleX(-1);
+    }
+    100% {
+        translate: 0;
+        transform: scaleX(1);
+    }
+}
+
+@keyframes tetris-animation {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(120vh);
+    }
+}

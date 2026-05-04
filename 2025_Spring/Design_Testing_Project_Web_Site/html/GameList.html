@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/GameList.css" />
+        <link rel="icon" type="image/png" href="../assets/mario-8bit.gif" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <title>SinglePlayer</title>
+    </head>
+    <body>
+        <nav id="nav">
+            <button id="menu-btn" class="sixtyfour-convergence">◢</button>
+
+            <div id="pacman">
+                <img
+                    src="../assets/pac-man.gif"
+                    alt="pacman-gif"
+                    id="pacman-gif"
+                />
+            </div>
+
+            <div id="logo">
+                <img
+                    src="../assets/mario-8bit.gif"
+                    alt="mario-gif"
+                    id="spinning-mario-gif"
+                />
+                    <h1 id="logo-title" class="sixtyfour-convergence">
+                        SinglePlayer
+                    </h1>
+            </div>
+        </nav>
+        <main id="main-container">
+            <div id="left-nav">
+                <ul>
+                    <li>
+                        <a href="./HomePage.html">Home Page</a>
+                    </li>
+                    <li>
+                        <a href="./GameList.html"> Game Critics </a>
+                    </li>
+                    <li>
+                        <a href="#footer"> Contact Us </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="filter-container" class="d-flex gap-1 flex-column">
+                <input
+                    type="search"
+                    id="filter-search"
+                    placeholder="Filter Game"
+                />
+                <div id="filter-console" class="filter">
+                    <p class="sixtyfour-convergence" id="console">Console</p>
+                    <ul>
+                        <li><input type="checkbox" value="psp" />PSP</li>
+                        <li>
+                            <input type="checkbox" value="game-boy" />Game Boy
+                        </li>
+                        <li><input type="checkbox" value="atari" />Atari</li>
+                    </ul>
+                </div>
+                <div id="filter-year" class="filter">
+                    <p class="sixtyfour-convergence" id="year">Year</p>
+                    <ul>
+                        <li><input type="checkbox" value="85" />1985</li>
+                        <li><input type="checkbox" value="84" />1984</li>
+                        <li><input type="checkbox" value="81" />1981</li>
+                        <li><input type="checkbox" value="80" />1980</li>
+                    </ul>
+                </div>
+                <div id="filter-rate" class="filter">
+                    <p class="sixtyfour-convergence" id="rate">Rate</p>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="5" />
+                            <img
+                                src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                alt="star"
+                                width="20"
+                                height="20"
+                            />
+                            <img
+                                src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                alt="star"
+                                width="20"
+                                height="20"
+                            />
+                            <img
+                                src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                alt="star"
+                                width="20"
+                                height="20"
+                            />
+                            <img
+                                src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                alt="star"
+                                width="20"
+                                height="20"
+                            />
+                            <img
+                                src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                alt="star"
+                                width="20"
+                                height="20"
+                            />
+                        </li>
+                        <li>
+                            <input type="checkbox" value="4" />
+                            <img
+                                src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                alt="star"
+                                width="20"
+                                height="20"
+                            />
+                            <img
+                                src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                alt="star"
+                                width="20"
+                                height="20"
+                            />
+                            <img
+                                src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                alt="star"
+                                width="20"
+                                height="20"
+                            />
+                            <img
+                                src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                alt="star"
+                                width="20"
+                                height="20"
+                            />
+                        </li>
+                        <li>
+                            <input type="checkbox" value="3" />
+                            <img
+                                src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                alt="star"
+                                width="20"
+                                height="20"
+                            />
+                            <img
+                                src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                alt="star"
+                                width="20"
+                                height="20"
+                            />
+                            <img
+                                src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                alt="star"
+                                width="20"
+                                height="20"
+                            />
+                        </li>
+                        <li>
+                            <input type="checkbox" value="2" />
+                            <img
+                                src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                alt="star"
+                                width="20"
+                                height="20"
+                            />
+                            <img
+                                src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                alt="star"
+                                width="20"
+                                height="20"
+                            />
+                        </li>
+                        <li>
+                            <input type="checkbox" value="1" />
+                            <img
+                                src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                alt="star"
+                                width="20"
+                                height="20"
+                            />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="critics-container">
+                <div
+                    class="critic-card"
+                    data-console="atari"
+                    data-year="80"
+                    data-rate="4"
+                >
+                    <a href="./Pacman.html">
+                        <img src="../assets/pac-man-nes-front-cover.jpg" />
+                        <div class="content">
+                            <h2 class="sixtyfour-convergence">Pacman</h2>
+                            <p class="preview">
+                                Step back into the warm, static glow of a CRT
+                                monitor. Whenever we dust off the old consoles
+                                and dig into that special corner of our memories
+                                dedicated to retro gaming, a yellow, pie-shaped
+                                hero is almost always waiting for us. 8-bit
+                                Pac-Man isn't just a video game; it's a
+                                foundational text for the entire medium. It’s
+                                the title that defined a generation and proved
+                                that digital entertainment could become a global
+                                phenomenon ... click for more
+                            </p>
+                            <div class="stars">
+                                <img
+                                    src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                    alt="star"
+                                    width="20"
+                                    height="20"
+                                />
+                                <img
+                                    src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                    alt="star"
+                                    width="20"
+                                    height="20"
+                                />
+                                <img
+                                    src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                    alt="star"
+                                    width="20"
+                                    height="20"
+                                />
+                                <img
+                                    src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                    alt="star"
+                                    width="20"
+                                    height="20"
+                                />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div
+                    class="critic-card"
+                    data-console="game-boy"
+                    data-year="81"
+                    data-rate="2"
+                >
+                    <a href="./DonkeyKong.html">
+                        <img src="../assets/donkey-kong.jpg" />
+                        <div class="content">
+                            <h2 class="sixtyfour-convergence">Donkey Kong</h2>
+                            <p class="preview">
+                                When we curate a Memories Corner for classic
+                                games, we usually focus on that warm, fuzzy
+                                feeling of nostalgia and celebrate the golden
+                                age of our childhoods. However, sometimes we
+                                have to put on our honest reviewer glasses and
+                                admit that certain legendary titles simply
+                                haven't survived the cruel test of time. 8-bit
+                                Donkey Kong might be one of the most important
+                                foundational blocks in gaming history—after all,
+                                it introduced the world to Mario (then known as
+                                Jumpman) and our iconic giant ape. But actually
+                                sitting down to play it today feels less like a
+                                joyful trip down memory lane and more like a
+                                grueling test of patience ...click for more
+                            </p>
+                            <div class="stars">
+                                <img
+                                    src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                    alt="star"
+                                    width="20"
+                                    height="20"
+                                />
+                                <img
+                                    src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                    alt="star"
+                                    width="20"
+                                    height="20"
+                                />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div
+                    class="critic-card"
+                    data-console="psp"
+                    data-year="85"
+                    data-rate="3"
+                >
+                    <a href="./Mario.html">
+                        <img src="../assets/super-mario-bros.jpg" />
+                        <div class="content">
+                            <h2 class="sixtyfour-convergence">
+                                Super Mario Bros
+                            </h2>
+                            <p class="preview">
+                                Welcome back to the Memories Corner. When
+                                discussing the titans of the 8-bit era, skipping
+                                Super Mario Bros. is practically a crime. It is
+                                the poster child for the NES, the undisputed
+                                blueprint for the side-scrolling platformer, and
+                                the title that almost single-handedly
+                                revitalized the home console market. But here,
+                                we try to separate the overwhelming historical
+                                mythology from the actual moment-to-moment
+                                gameplay. When you strip away its massive
+                                cultural impact and judge the original game
+                                purely on how it feels to play today, it lands
+                                squarely in the middle of the pack. It’s
+                                undeniably important, but it’s far from the
+                                untouchable masterpiece that pure nostalgia
+                                often paints it to be ...click for more
+                            </p>
+                            <div class="stars">
+                                <img
+                                    src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                    alt="star"
+                                    width="20"
+                                    height="20"
+                                />
+                                <img
+                                    src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                    alt="star"
+                                    width="20"
+                                    height="20"
+                                />
+                                <img
+                                    src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                    alt="star"
+                                    width="20"
+                                    height="20"
+                                />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div
+                    class="critic-card"
+                    data-console="atari"
+                    data-year="84"
+                    data-rate="5"
+                >
+                    <a href="./Tetris.html">
+                        <img src="../assets/NES_tetris_Box_Front.jpg" />
+                        <div class="content">
+                            <h2 class="sixtyfour-convergence">Tetris</h2>
+                            <p class="preview">
+                                Every true Memories Corner needs a crown jewel,
+                                a title that transcends the very medium of video
+                                games to become an exercise in pure, universal
+                                logic. 8-bit atari is that game. When it dropped
+                                onto the scene, particularly finding its
+                                legendary home on the NES and the original Game
+                                Boy, it didn't just entertain us; it
+                                fundamentally rewired our brains. It is the
+                                absolute gold standard of puzzle design, an
+                                experience so flawlessly executed that it
+                                remains virtually unimprovable decades later
+                                ...click for more
+                            </p>
+                            <div class="stars">
+                                <img
+                                    src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                    alt="star"
+                                    width="20"
+                                    height="20"
+                                />
+                                <img
+                                    src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                    alt="star"
+                                    width="20"
+                                    height="20"
+                                />
+                                <img
+                                    src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                    alt="star"
+                                    width="20"
+                                    height="20"
+                                />
+                                <img
+                                    src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                    alt="star"
+                                    width="20"
+                                    height="20"
+                                />
+                                <img
+                                    src="../assets/Mario-Pixel-Star-PNG-Images.png"
+                                    alt="star"
+                                    width="20"
+                                    height="20"
+                                />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <footer id="footer">
+                <p>Copyright © 2026</p>
+                <div id="contact-us" class="contact-container">
+                    <h3 class="sixtyfour-convergence">Contact Us!</h3>
+                    <div class="contact-links">
+                        <a
+                            href="https://instagram.com/"
+                            target="_blank"
+                            class="contact-item instagram"
+                        >
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a
+                            href="https://wa.me/"
+                            target="_blank"
+                            class="contact-item whatsapp"
+                        >
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a
+                            href="mailto:info@singleplayer.com"
+                            class="contact-item mail"
+                        >
+                            <i class="far fa-envelope"></i>
+                            <span>E-Mail</span>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="../js/main.js"></script>
+        <script src="../js/GameList.js"></script>
+    </body>
+</html>

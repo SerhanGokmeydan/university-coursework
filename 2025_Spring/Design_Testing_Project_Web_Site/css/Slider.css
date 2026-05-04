@@ -1,0 +1,107 @@
+#slider-container {
+    width: 100%;
+    background-color: #212529;
+    padding: 1000px 70px 300px 70px;
+}
+
+#slider-container p {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    margin-bottom: 300px;
+    overflow-x: auto;
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 3%,
+        black 97%,
+        transparent
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 3%,
+        black 97%,
+        transparent
+    );
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+#memories-slider {
+    margin: 0;
+}
+
+.slider-item-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    animation: slider-animation infinite linear;
+    padding-right: 48px;
+}
+
+#weekly-critics-slider .slider-item-group {
+    animation-duration: 19s;
+}
+
+#memories-slider .slider-item-group {
+    animation-duration: 53s;
+}
+
+@keyframes slider-animation {
+    from {
+        translate: 0%;
+    }
+    to {
+        translate: -100%;
+    }
+}
+
+.memory-card {
+    width: 700px;
+    height: 500px;
+    flex: 0 0 700px;
+    padding: 30px;
+    color: whitesmoke;
+    display: flex;
+    align-items: end;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider-item-group .memory-card:nth-child(1) {
+    background-image:
+        linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.95) 100%),
+        url("../assets/atari-man.png");
+}
+
+.slider-item-group .memory-card:nth-child(2) {
+    background-image:
+        linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.95) 100%),
+        url("../assets/family.png");
+}
+
+.slider-item-group .memory-card:nth-child(3) {
+    background-image:
+        linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.95) 100%),
+        url("../assets/pacman-brothers.png");
+}
+
+.slider-item-group .memory-card:nth-child(4) {
+    background-image:
+        linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.95) 100%),
+        url("../assets/gameboy-boy.png");
+}
+
+#weekly-critics-slider .slider-item-group a{
+    cursor: pointer;
+}

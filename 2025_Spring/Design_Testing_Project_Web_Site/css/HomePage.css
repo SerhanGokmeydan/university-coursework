@@ -1,0 +1,13 @@
+@import url("./main.css");
+@import url("./Video.css");
+@import url("./Slider.css");
+
+#welcome-message{
+    padding: 400px 50px 100px 50px;
+    background: linear-gradient(black, #212529);
+    text-align: center;
+}
+
+#welcome-message p{
+    font-size: 48px;
+}

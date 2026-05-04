@@ -1,0 +1,164 @@
+@import url("./main.css");
+
+#filter-container {
+    background-color: #0a1216;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* position: absolute; */
+    position: fixed;
+    top: 100px;
+    /* height: 100%; */
+    height: calc(100vh - 100px);
+
+}
+
+
+.filter p {
+    cursor: pointer;
+}
+
+.filter p:hover {
+    font-size: 24px;
+}
+
+.filter .p-active {
+    font-size: 24px;
+}
+
+.filter ul {
+    display: none;
+    list-style: none;
+    color: whitesmoke;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+.filter li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: sans-serif; 
+    font-size: 20px;
+    color: #b0b0b0;
+    position: relative;
+    padding-left: 35px; 
+    margin-bottom: 12px;
+}
+
+
+.filter li input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+    z-index: 2; 
+}
+
+.filter li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #0a1216; 
+    border: 2px solid #555;    
+    image-rendering: pixelated;
+}
+
+.filter li:has(input:checked) {
+    color: #ff4444;
+}
+
+.filter li:has(input:checked)::before {
+    background-color: #ff4444;
+    border-color: #ff0000;
+    box-shadow: inset 2px 2px 0px #b22222;
+}
+
+.filter li img{
+    margin-right: 5px;
+}
+
+#filter-search {
+    background-color: #1a1c1e; 
+    border: 2px solid #ff4444; 
+    border-radius: 8px;        
+    color: #ffffff;            
+    padding: 10px 15px;        
+    margin-bottom: 15px;       
+    outline: none;             
+    transition: all 0.3s ease; 
+}
+
+#filter-search:focus {
+    border-color: #ff0000;
+    box-shadow: 0 0 8px rgba(255, 68, 68, 0.4);
+}
+
+#filter-search::placeholder {
+    color: #666;
+    font-size: 14px;
+}
+
+#critics-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 283px;
+background-color: #212529;
+    flex-grow: 1;
+}
+
+
+.critic-card {
+    width: 80%;
+    margin-bottom: 64px;
+}
+
+.critic-card a {
+    display: flex;
+    gap: 24px;
+    font-size: 24px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.critic-card img {
+    width: 200px;
+    height: 300px;
+}
+
+.critic-card p{
+    font-family: sans-serif;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.content h2{
+    margin-bottom: 20px;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+
+}
+
+.stars img{
+    width: 20px;
+    height: 20px;
+}
