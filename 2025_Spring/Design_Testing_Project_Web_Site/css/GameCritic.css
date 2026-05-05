@@ -1,7 +1,6 @@
 @import url("./main.css");
 
 #critic {
-    width: 50%;
     align-self: center;
     padding: 50px 50px;
     background: linear-gradient(
@@ -11,6 +10,9 @@
         #212529 85%,
         black
     );
+    max-width: 1000px;
+    position: relative;
+    z-index: 15;
 }
 
 #critic h1 {
@@ -42,10 +44,11 @@
     position: absolute;
     width: 150px;
     height: 100px;
+    z-index: -1;
 }
 
 .donkey-kong-div {
-    z-index: -1 ;
+    z-index: -1;
     position: fixed;
     top: 300px;
     right: 250px;
@@ -75,11 +78,11 @@
 }
 
 #footer .donkey-kong {
-    bottom: 152px;
+    bottom: 168px;
     width: 300px;
     height: 200px;
+    z-index: -1;
 }
-
 
 .block {
     position: fixed;
@@ -144,8 +147,8 @@
 
 .flower {
     bottom: 250px;
-    right: 200px;
-z-index: -2;
+    left: 1500px;
+    z-index: -2;
 }
 
 .arcade-star {
@@ -153,11 +156,11 @@ z-index: -2;
     left: calc(150px * var(--j));
 }
 
-.coin{
-    bottom:410px ;
-    right: 182px;
-width: 40px;
-height: 40px;
+.coin {
+    bottom: 410px;
+    left: 1500px;
+    width: 40px;
+    height: 40px;
 }
 
 @keyframes ghost-animation {

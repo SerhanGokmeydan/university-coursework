@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
         <link rel="stylesheet" href="../css/GameCritic.css" />
         <link rel="icon" type="image/png" href="../assets/mario-8bit.gif" />
         <link
@@ -12,7 +13,10 @@
         <title>SinglePlayer</title>
     </head>
     <body>
-        <nav id="nav">
+        <nav
+            id="nav"
+            class="d-flex justify-content-between align-items-center px-3 px-md-5"
+        >
             <button id="menu-btn" class="sixtyfour-convergence">◢</button>
 
             <div id="pacman">
@@ -87,6 +91,41 @@
             />
             <img
                 src="../assets/mario-8-bit-ground.gif"
+                style="--i: 20"
+                class="mario ground"
+            />
+            <img
+                src="../assets/mario-8-bit-ground.gif"
+                style="--i: 21"
+                class="mario ground"
+            />
+            <img
+                src="../assets/mario-8-bit-ground.gif"
+                style="--i: 22"
+                class="mario ground"
+            />
+            <img
+                src="../assets/mario-8-bit-ground.gif"
+                style="--i: 23"
+                class="mario ground"
+            />
+            <img
+                src="../assets/mario-8-bit-ground.gif"
+                style="--i: 24"
+                class="mario ground"
+            />
+            <img
+                src="../assets/mario-8-bit-ground.gif"
+                style="--i: 25"
+                class="mario ground"
+            />
+            <img
+                src="../assets/mario-8-bit-ground.gif"
+                style="--i: 26"
+                class="mario ground"
+            />
+            <img
+                src="../assets/mario-8-bit-ground.gif"
                 style="--i: 27"
                 class="mario ground"
             />
@@ -151,15 +190,47 @@
                 class="mario luck"
             />
             <img src="../assets/luigi-run.gif" alt="" class="mario luigi" />
-            <img src="../assets/cogumelo-mario-bros.webp" class="mario mushroom" alt="">
-            <img src="../assets/fire-flower-super-mario-world.webp" class="mario flower" alt="">
-            <img src="../assets/mario-bros-star-star-arcade.gif"  class="mario arcade-star" style="--i: 1; --j:1">
-            <img src="../assets/mario-bros-star-star-arcade.gif"  class="mario arcade-star" style="--i: 2; --j:2">
-            <img src="../assets/mario-bros-star-star-arcade.gif"  class="mario arcade-star" style="--i: 1; --j:3">
-            <img src="../assets/mario-bros-star-star-arcade.gif"  class="mario arcade-star" style="--i: 2; --j:9.5">
-            <img src="../assets/mario-bros-star-star-arcade.gif"  class="mario arcade-star" style="--i: 1; --j:10.5">
-            <img src="../assets/mario-bros-star-star-arcade.gif"  class="mario arcade-star" style="--i: 2; --j:11.5">
-            <img src="../assets/mario-coin.gif" class="mario coin" alt="">
+            <img
+                src="../assets/cogumelo-mario-bros.webp"
+                class="mario mushroom"
+                alt=""
+            />
+            <img
+                src="../assets/fire-flower-super-mario-world.webp"
+                class="mario flower"
+                alt=""
+            />
+            <img
+                src="../assets/mario-bros-star-star-arcade.gif"
+                class="mario arcade-star"
+                style="--i: 1; --j: 1"
+            />
+            <img
+                src="../assets/mario-bros-star-star-arcade.gif"
+                class="mario arcade-star"
+                style="--i: 2; --j: 2"
+            />
+            <img
+                src="../assets/mario-bros-star-star-arcade.gif"
+                class="mario arcade-star"
+                style="--i: 1; --j: 3"
+            />
+            <img
+                src="../assets/mario-bros-star-star-arcade.gif"
+                class="mario arcade-star"
+                style="--i: 2; --j: 9.5"
+            />
+            <img
+                src="../assets/mario-bros-star-star-arcade.gif"
+                class="mario arcade-star"
+                style="--i: 1; --j: 10.5"
+            />
+            <img
+                src="../assets/mario-bros-star-star-arcade.gif"
+                class="mario arcade-star"
+                style="--i: 2; --j: 11.5"
+            />
+            <img src="../assets/mario-coin.gif" class="mario coin" alt="" />
             <div id="left-nav">
                 <ul>
                     <li>
@@ -173,7 +244,10 @@
                     </li>
                 </ul>
             </div>
-            <div id="critic">
+            <div
+                id="critic"
+                class="container flex-grow-1 p-4 p-md-5 w-100 w-md-50 w-lg-25"
+            >
                 <h1 class="sixtyfour-convergence">
                     Retro Review: Super Mario Bros
                 </h1>
@@ -235,7 +309,10 @@
                     long before you ever rescue the Princess.
                 </p>
             </div>
-            <footer id="footer">
+            <footer
+                id="footer"
+                class="d-flex flex-column flex-md-row justify-content-between align-items-center flex-wrap gap-4"
+            >
                 <p>Copyright © 2026</p>
                 <div id="contact-us" class="contact-container">
                     <h3 class="sixtyfour-convergence">Contact Us!</h3>

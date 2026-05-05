@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/GameList.css" />
         <link rel="icon" type="image/png" href="../assets/mario-8bit.gif" />
         <link
@@ -10,6 +11,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
         <title>SinglePlayer</title>
+        
     </head>
     <body>
         <nav id="nav">
@@ -48,7 +50,9 @@
                     </li>
                 </ul>
             </div>
-            <div id="filter-container" class="d-flex gap-1 flex-column">
+            <div class="row m-0 w-100 flex-grow-1">
+                <div class="col-12 col-md-4 col-lg-3 p-0" >
+                    <div id="filter-container" class="d-flex gap-1 flex-column p-4 position-sticky" >
                 <input
                     type="search"
                     id="filter-search"
@@ -184,14 +188,16 @@
                     </ul>
                 </div>
             </div>
-            <div id="critics-container">
+                            </div>
+                <div class="col-12 col-md-8 col-lg-9 p-0 d-flex flex-column">
+                    <div id="critics-container" class="p-4 p-md-5 d-flex flex-column align-items-center flex-grow-1" >
                 <div
-                    class="critic-card"
+                    class="critic-card w-100 mb-5"
                     data-console="atari"
                     data-year="80"
                     data-rate="4"
                 >
-                    <a href="./Pacman.html">
+                    <a href="./Pacman.html" class="d-flex flex-column flex-xl-row gap-4 align-items-center align-items-xl-start text-decoration-none">
                         <img src="../assets/pac-man-nes-front-cover.jpg" />
                         <div class="content">
                             <h2 class="sixtyfour-convergence">Pacman</h2>
@@ -237,12 +243,12 @@
                     </a>
                 </div>
                 <div
-                    class="critic-card"
+                    class="critic-card w-100 mb-5"
                     data-console="game-boy"
                     data-year="81"
                     data-rate="2"
                 >
-                    <a href="./DonkeyKong.html">
+                    <a href="./DonkeyKong.html" class="d-flex flex-column flex-xl-row gap-4 align-items-center align-items-xl-start text-decoration-none">
                         <img src="../assets/donkey-kong.jpg" />
                         <div class="content">
                             <h2 class="sixtyfour-convergence">Donkey Kong</h2>
@@ -280,12 +286,12 @@
                     </a>
                 </div>
                 <div
-                    class="critic-card"
+                    class="critic-card w-100 mb-5"
                     data-console="psp"
                     data-year="85"
                     data-rate="3"
                 >
-                    <a href="./Mario.html">
+                    <a href="./Mario.html" class="d-flex flex-column flex-xl-row gap-4 align-items-center align-items-xl-start text-decoration-none">
                         <img src="../assets/super-mario-bros.jpg" />
                         <div class="content">
                             <h2 class="sixtyfour-convergence">
@@ -333,12 +339,12 @@
                     </a>
                 </div>
                 <div
-                    class="critic-card"
+                    class="critic-card w-100 mb-5"
                     data-console="atari"
                     data-year="84"
                     data-rate="5"
                 >
-                    <a href="./Tetris.html">
+                    <a href="./Tetris.html" class="d-flex flex-column flex-xl-row gap-4 align-items-center align-items-xl-start text-decoration-none">
                         <img src="../assets/NES_tetris_Box_Front.jpg" />
                         <div class="content">
                             <h2 class="sixtyfour-convergence">Tetris</h2>
@@ -392,7 +398,10 @@
                     </a>
                 </div>
             </div>
-            <footer id="footer">
+                    </div>
+                </div>
+            </div>
+            <footer id="footer" class="d-flex flex-column flex-md-row justify-content-between align-items-center flex-wrap">
                 <p>Copyright © 2026</p>
                 <div id="contact-us" class="contact-container">
                     <h3 class="sixtyfour-convergence">Contact Us!</h3>

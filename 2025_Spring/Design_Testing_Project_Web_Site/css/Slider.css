@@ -1,7 +1,7 @@
 #slider-container {
     width: 100%;
     background-color: #212529;
-    padding: 1000px 70px 300px 70px;
+    padding: 1000px 5vw 150px 5vw;
 }
 
 #slider-container p {
@@ -12,7 +12,7 @@
 .slider {
     display: flex;
     align-items: center;
-    margin-bottom: 300px;
+    margin-bottom: 250px;
     overflow-x: auto;
     -webkit-mask-image: linear-gradient(
         to right,

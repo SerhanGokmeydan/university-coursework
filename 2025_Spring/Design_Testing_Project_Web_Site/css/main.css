@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 @font-face {
     font-family: "Sixtyfour Convergence";
@@ -98,7 +94,7 @@ img {
     align-items: center;
     /* height: 100%; */
     height: calc(100vh - 100px);
-    z-index: 20;
+    z-index: 1050;
     padding: 50px;
     font-size: 18px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -137,7 +133,7 @@ img {
 #menu-btn {
     font-size: 48px;
     cursor: pointer;
-    z-index: 20;
+    z-index: 1050;
     background-color: transparent;
     border: none;
 }
@@ -229,3 +225,4 @@ footer {
 .contact-item i {
     font-size: 1.2rem;
 }
+

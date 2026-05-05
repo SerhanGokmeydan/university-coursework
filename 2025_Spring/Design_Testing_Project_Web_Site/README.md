@@ -70,4 +70,4 @@ When evaluating the user's action of "finding the desired game"; the user forms 
 
 ## Deficiencies
 
-In the project guidelines, it was requested that the website consist of exactly 4 pages. However, our project has a total of 6 pages (HomePage, GameList, Mario, Pacman, Tetris, DonkeyKong). Also, we didn't use bootstrap because we couldn't adapt it to the animated structure. Piling all the visuals, texts, and animations of all games onto a single page would violate the **UI Simplicity principle** and tire the user by greatly extending the page scrolling time. Therefore, each game is divided into its own isolated page.
+In the project guidelines, it was requested that the website consist of exactly 4 pages. However, our project has a total of 6 pages (HomePage, GameList, Mario, Pacman, Tetris, DonkeyKong). Piling all the visuals, texts, and animations of all games onto a single page would violate the **UI Simplicity principle** and tire the user by greatly extending the page scrolling time. Therefore, each game is divided into its own isolated page.
