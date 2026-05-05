@@ -83,7 +83,6 @@ public partial class Form1 : Form
         if (Polygon == null)
         {
             btnReset.PerformClick();
-            MessageBox.Show("Please draw a polygon first.");
             return;
         }
 
@@ -339,5 +338,7 @@ public partial class Form1 : Form
         UpdateTrackBarLabel(trackGreen, lblGreenValue);
         UpdateTrackBarLabel(trackBlue, lblBlueValue);
         UpdateTrackBarLabel(trackSpinInterval, lblSpinIntervalValue);
+
+        btnDraw.PerformClick();
     }
 }
