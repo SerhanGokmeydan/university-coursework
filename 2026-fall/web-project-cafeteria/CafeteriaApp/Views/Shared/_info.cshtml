@@ -1,0 +1,9 @@
+@model List<Order>
+
+<div class="card sticky-top mb-3" style="top: 20px;">
+    <div class="card-body">
+        <h4 class="card-title">Central Cafeteria</h4>
+        <p class="card-text">Date: @DateOnly.FromDateTime(DateTime.Today)</p>
+        <p class="card-text">@ViewBag.InfoTitle: @Model.Count()</p>
+    </div>
+</div>

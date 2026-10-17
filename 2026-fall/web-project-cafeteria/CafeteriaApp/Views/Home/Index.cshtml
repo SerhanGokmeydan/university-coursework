@@ -1,0 +1,8 @@
+@model List<Order>
+
+@await Html.PartialAsync("_orders", Model) 
+
+@section info{
+    @await Html.PartialAsync("_info", Model)
+}
+

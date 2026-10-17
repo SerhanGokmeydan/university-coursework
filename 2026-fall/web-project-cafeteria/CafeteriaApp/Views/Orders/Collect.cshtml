@@ -1,0 +1,17 @@
+@model Order
+
+<div class="card">
+    <div class="card-header">
+        <h3>Collect Order</h3>
+    </div>
+    <div class="card-body">
+        <form asp-controller="orders" asp-action="collect" method="post">
+            <label asp-for="OrderId">Order Id:</label>
+            <div class="input-group">
+                <input asp-for="OrderId" placeholder="Please enter the order id" class="form-control">
+                <button type="submit" class="btn btn-primary">Collect</button>
+            </div>
+            <span asp-validation-for="OrderId" class="text-danger"></span>
+        </form>
+    </div>
+</div>
